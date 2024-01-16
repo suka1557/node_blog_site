@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const PORT = 5024;
 
+const article_list = require('./data/ArticleList');
+
 //set up ejs as engine for rendering html
 app.set('view engine', 'ejs');
 
@@ -9,7 +11,7 @@ app.set('view engine', 'ejs');
 const developer_name = "Sukant Kumar";
 
 app.get('/', (req, res) => {
-    res.render('index', {developer_name});
+    res.render('index', {articles: article_list, developer_name});
 });
 
 app.listen(PORT, ()=>{console.log(`listening on port: ${PORT}`);});

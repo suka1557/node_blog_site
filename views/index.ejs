@@ -8,5 +8,10 @@
 <body>
     <h1>Hello Coders</h1>
     <h2>This Site is developed by <%= developer_name  %></h2>
+    <ul>
+        <% articles.forEach(article => { %>
+            <li><%= article.title %></li>
+          <% }); %>
+    </ul>
 </body>
 </html>
