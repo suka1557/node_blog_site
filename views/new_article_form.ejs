@@ -11,33 +11,33 @@
     <h1>Write your Article here!</h1>
 
     <!-- Form starts here -->
-    <form action="/submitForm" method="POST">
+    <form action="/articles/create_new_article" method="POST">
 
         
         
         <!-- Title Field -->
         <div class="form-group"></div>
             <label for="title">Title:</label>
-            <textarea class="form-control col-md-6 col-lg-8" id="title" name="title" rows="2" cols="150" required></textarea>
+            <textarea class="form-control col-md-6 col-lg-8" id="title" name="ArticleTitle" rows="2" cols="150" required></textarea>
             <br>
         </div>
 
         <!-- Description Field -->
         <div class="form-group">
             <label for="description">Description:</label>
-            <textarea class="form-control col-md-6 col-lg-8" id="description" name="description" rows="2" cols="150" required></textarea>
+            <textarea class="form-control col-md-6 col-lg-8" id="description" name="ArticleDescription" rows="2" cols="150" required></textarea>
             <br>
         </div>
 
         <!-- Body Field -->
         <div class="form-group">
             <label for="body">Body:</label>
-            <textarea class="form-control col-md-6 col-lg-8" id="body" name="body" rows="10" cols="150" required></textarea>
+            <textarea class="form-control col-md-6 col-lg-8" id="body" name="ArticleContent" rows="10" cols="150" required></textarea>
             <br>
         </div>
 
         <!-- Submit Button -->
-        <a href="" class="btn btn-primary" >Save</a>
+        <button type="submit"  class="btn btn-primary" >Save</button>
         <a href="/" class="btn btn-secondary"" >Cancel</a>
 
     </form>
