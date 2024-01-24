@@ -21,10 +21,10 @@
                 <h5 class="card-title"><%= article.title %></h5>
                 <h6 class="card-subtitle"><%= article.author%> , <%=article.formatted_date %> </h6>
                 <br>
-                <br>
-                <p class="card-text mb-5"><%= article.description %></p>
 
-                <button type="button" class="btn btn-primary">Show Complete Article</button>
+                <p class="card-text mb-3"><%= article.description %></p>
+
+                <button type="button" class="btn btn-primary" id="<%= article.record_id + '_show' %>">Show Complete Article</button>
                 <button type="button" class="btn btn-info" disabled>Edit</button>
                 <button type="button" class="btn btn-danger" disabled>Delete</button>
 

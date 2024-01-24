@@ -26,9 +26,9 @@ app.get('/', async (req, res) => {
             // Process each document if needed
             const dateOptions = { day: '2-digit', month: 'short', year: 'numeric' };
             const formattedDate = new Date(record.updated_at_unix_timestamp * 1000).toLocaleDateString('en-US', dateOptions);
-
             
                 return {
+                    record_id: record._id.toHexString(),
                     title : record.article_title,
                     author: record.author_name,
                     description : record.article_description,
