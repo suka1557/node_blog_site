@@ -25,8 +25,8 @@
                 <p class="card-text mb-3"><%= article.description %></p>
 
                 <button type="button" class="btn btn-primary" id="<%= article.record_id + '_show' %>">Show Complete Article</button>
-                <button type="button" class="btn btn-info" disabled>Edit</button>
-                <button type="button" class="btn btn-danger" disabled>Delete</button>
+                <button type="button" class="btn btn-info" id="<%= article.record_id + '_edit' %>" disabled>Edit</button>
+                <button type="button" class="btn btn-danger" id="<%= article.record_id + '_delete' %>"disabled>Delete</button>
 
             </div>
             </div>
