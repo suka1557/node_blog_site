@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const path = require('path')
 const PORT = 5024;
 const ArticleRoute = require('./routes/ArticleRoute');
 const mongo_collection = require('./connections/MongoConnect');
@@ -7,6 +8,9 @@ const mongo_collection = require('./connections/MongoConnect');
 
 //set up ejs as engine for rendering html
 app.set('view engine', 'ejs');
+
+//use public folder to serve static files
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Use article route inside app
 app.use('/articles', ArticleRoute);
