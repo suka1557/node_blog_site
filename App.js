@@ -11,6 +11,7 @@ app.set('view engine', 'ejs');
 
 //use public folder to serve static files
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "client_side_js")));
 
 // Use article route inside app
 app.use('/articles', ArticleRoute);
