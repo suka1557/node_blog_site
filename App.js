@@ -19,7 +19,7 @@ app.use('/articles', ArticleRoute);
 //Checking passing of variables from JS file to EJS template to be render
 const developer_name = "Sukant Kumar";
 
-app.get('/', async (req, res) => {
+app.get('/ml', async (req, res) => {
 
     // Assuming you want to find all documents in the collection
     const documents = await mongo_collection.find({}).toArray();
@@ -43,6 +43,10 @@ app.get('/', async (req, res) => {
         });
 
     res.render('index', {articles: article_list, developer_name});
+});
+
+app.get('/', async (req, res) => {
+    res.render('home') ;
 });
 
 app.listen(PORT, ()=>{console.log(`listening on port: ${PORT}`);});
