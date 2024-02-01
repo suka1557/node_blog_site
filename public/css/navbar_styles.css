@@ -1,8 +1,12 @@
 :root {
     --body-font: 'Poppins', sans-serif;
     --second-font: 'Syncopate', sans-serif;
+    --body-color: azure;
 }
 
+nav {
+    background-color: var(--body-color);
+}
 
 a.nav-link {
     font-family:   var(--body-font), var(--second-font) ;
