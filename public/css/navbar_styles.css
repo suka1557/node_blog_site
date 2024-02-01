@@ -1,0 +1,9 @@
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --second-font: 'Syncopate', sans-serif;
+}
+
+
+a.nav-link {
+    font-family:   var(--body-font), var(--second-font) ;
+}
