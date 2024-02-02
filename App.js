@@ -49,4 +49,8 @@ app.get('/', async (req, res) => {
     res.render('home');
 });
 
+app.get('/about', async (req, res) => {
+    res.render('about');
+});
+
 app.listen(PORT, ()=>{console.log(`listening on port: ${PORT}`);});
