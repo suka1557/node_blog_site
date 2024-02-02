@@ -1,0 +1,19 @@
+body {
+    background-image: url('/images/georgie-cobbs-bKjHgo_Lbpo-unsplash.jpeg'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* height: 80vh; */
+    margin: 0;
+    /* overflow-x: hidden; Prevent horizontal scrollbar due to negative margin */
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.25); /* Adjust the opacity by changing the last parameter (0.5 means 50% opacity) */
+    padding-top: 0; /* Adjust to the height of your header */
+    padding-bottom:0; /* Adjust to the height of your footer */
+  }
+
+  .text-content {
+    color: white; /* Set text color to be visible on the overlay */
+  }

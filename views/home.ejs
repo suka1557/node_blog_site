@@ -5,13 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Website Logo Favicon -->
     <link rel="icon" type="image/png" href="images/Website_logo_favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/homepage_styles.css">
 
     <title>Meet Sukant</title>
 </head>
 <body>
     <%- include('navbar_template.ejs') %>
 
+    <div class="container-fluid">
+        <div class="row overlay">
+          <!-- Left Column (Text) -->
+          <div class="col-md-6 align-items-center text-center d-flex">
+            <div class="text-content offset-md-3">
+
+                    <h2 class="home__subtitle">
+                        Happy To Meet You
+                    </h2>
+
+                    <h3 class="home__title_start">
+                        I'm a   <br />
+                    </h3>
+
+                    <h1 class="home_title">
+                        ML Engineer <br />
+                        Finance Ehtusiast <br />
+                        Writer <br />
+                    </h1>
+            </div>
+          </div>
+    
+          <!-- Right Column (Photo) -->
+          <div class="col-md-6">
+            <img src="images/Sukant_Kumar_Photo-Without_BG.png" alt="Your Photo" class="img-fluid rounded-circle" style="width: 70%; height:fit-content; ">
+          </div>
+        </div>
+      </div>
+
     <%- include('footer_template.ejs') %>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
 </body>
